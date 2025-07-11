@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightLeft } from '@fortawesome/free-solid-svg-icons';
 import { currencyList } from "./currencyList";
 import { countryList } from "./countryList";
-import type { counter } from "@fortawesome/fontawesome-svg-core";
 
 export default function CurrencyConverter() {
 
