@@ -39,16 +39,11 @@ body {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  /* padding: 3rem; */
-  /* border: 2px solid red; */
   margin-top: 2rem;
 }
-@media (max-width: 767px) {
-  .bigBox {
-    flex-direction: column;
-    /* align-items: center; optional */
-  }
-}
+
+
+
 .darkBody {
   background-color: rgb(34, 32, 32);
 }
@@ -129,11 +124,11 @@ body {
 
 .country-heading {
   color: teal;
-  font-size: 3.9rem;
+  font-size: 2.9rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.nav-heading{
-  font-size: 2.2rem;
+#nav-heading{
+  font-size: 3.2rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .dark-mode-common-color{
@@ -147,4 +142,172 @@ body {
 }
 .light-mode-common-border{
  border: 1px solid teal; 
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  .bigBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  #nav-heading{
+    font-size: 2.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .country-heading{
+    color: teal;
+    font-size: 1.9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .selection {
+
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .amount {
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .currency {
+    font-size: 1rem;
+    color: teal;
+  }
+
+  .country {
+    font-size: 1.1rem;
+    color: teal;
+  }
+  .flag-image {
+    width: 4rem;
+  }
+  .left-div{
+    height: 40%;
+    gap: 0.5rem;
+  }
+  .mid-div{
+    height: 15%;
+    margin: 4rem;
+  }
+  .exchange {
+    font-size: 2.4rem;
+    color: teal;
+  }
+  .right-div{
+    height: 40%;
+    margin-bottom: 5rem;
+  }
+
+  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bigBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  #nav-heading{
+    font-size: 2.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .country-heading{
+    color: teal;
+    font-size: 1.9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .selection {
+
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .amount {
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .currency {
+    font-size: 1rem;
+    color: teal;
+  }
+
+  .country {
+    font-size: 1.1rem;
+    color: teal;
+  }
+  .flag-image {
+    width: 4rem;
+  }
+  .left-div{
+    height: 40%;
+    gap: 0.5rem;
+  }
+  .mid-div{
+    height: 15%;
+    margin: 4rem;
+  }
+  .exchange {
+    font-size: 2.4rem;
+    color: teal;
+  }
+  .right-div{
+    height: 40%;
+    margin-bottom: 5rem;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Desktop styles */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Large desktop styles */
+}
+
+/* XXL devices (very large screens, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Ultra-wide screen styles */
 }

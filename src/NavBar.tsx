@@ -18,7 +18,7 @@ const NavBar = ({ setDarkMode, darkMode }: { setDarkMode: Function; darkMode: bo
 
         <div className={`mynavbar ${darkMode ? "dark" : "light"}`} id="topnav">
             <div>
-                <h1 className={`nav-heading, ${darkMode ? "dark-mode-common-color" : "light-mode-common-color"}`}>Currency Converter</h1>
+                <h1 id="nav-heading" className={` ${darkMode ? "dark-mode-common-color" : "light-mode-common-color"}`}>Currency Converter</h1>
             </div>
             <div className="form-check form-switch">
                 <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked={darkMode} onChange={(event)=>handleDarkMode(event.target.checked)}/>
