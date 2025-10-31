@@ -4,20 +4,16 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   overflow-x: hidden;
   background-color: wheat;
-}
-
-.mynavbar {
-  width: 100%;
-  height: 25%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2.2rem;
 }
 
 .dark {
@@ -31,98 +27,646 @@ body {
   box-shadow: 0 4px 6px rgba(46, 0, 63, 0.4);
 }
 
-.bigBox {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-
 
 .darkBody {
   background-color: rgb(34, 32, 32);
 }
 
-.left-div {
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 1rem;
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  .mynavbar {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 2.2rem;
+    gap: 2rem;
+  }
+
+  .bigBox {
+    height: calc(100vh - 30vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .left-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+  }
+
+  .mid-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+
+  }
+
+  .right-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+
+  }
+
+  #nav-heading {
+    font-size: 2.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .form-check-label {
+    font-size: 0.70rem;
+    font-weight: 600;
+  }
+
+  .country-heading {
+    color: teal;
+    font-size: 1.58rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .selection {
+
+    padding: 0.2rem;
+    font-size: 0.80rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .amount {
+    padding: 0.2rem;
+    font-size: 0.80rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .currency {
+    font-size: 0.70rem;
+    color: teal;
+  }
+
+  .country {
+    font-size: 0.80rem;
+    color: teal;
+  }
+
+  .flag-image {
+    width: 3.2rem;
+  }
+
+
+  .exchange {
+    font-size: 2.9rem;
+    color: teal;
+  }
+
+
 }
 
-.mid-div {
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .mynavbar {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 2.2rem;
+    gap: 2rem;
+  }
+
+  .bigBox {
+    height: calc(100vh - 30vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .left-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+  }
+
+  .mid-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+
+  }
+
+  .right-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+
+  }
+
+  #nav-heading {
+    font-size: 2.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .form-check-label {
+    font-size: 0.70rem;
+    font-weight: 600;
+  }
+
+  .country-heading {
+    color: teal;
+    font-size: 1.58rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .selection {
+
+    padding: 0.2rem;
+    font-size: 0.80rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .amount {
+    padding: 0.2rem;
+    font-size: 0.80rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .currency {
+    font-size: 0.70rem;
+    color: teal;
+  }
+
+  .country {
+    font-size: 0.80rem;
+    color: teal;
+  }
+
+  .flag-image {
+    width: 3.2rem;
+  }
+
+
+  .exchange {
+    font-size: 2.9rem;
+    color: teal;
+  }
 
 }
 
-.right-div {
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 1rem;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .mynavbar {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2.2rem;
+  }
+
+  .bigBox {
+    height: calc(100vh - 25vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .left-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+  }
+
+  .mid-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+
+  }
+
+  .right-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+
+  }
+
+  #nav-heading {
+    font-size: 2.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .form-check-label {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .country-heading {
+    color: teal;
+    font-size: 1.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .selection {
+
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .amount {
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .currency {
+    font-size: 0.8rem;
+    color: teal;
+  }
+
+  .country {
+    font-size: 0.9rem;
+    color: teal;
+  }
+
+  .flag-image {
+    width: 3.8rem;
+  }
+
+
+  .exchange {
+    font-size: 3.1rem;
+    color: teal;
+  }
 
 }
 
-.exchange {
-  font-size: 4rem;
-  color: teal;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .mynavbar {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2.2rem;
+  }
+
+  .bigBox {
+    height: calc(100vh - 25vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .left-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+  }
+
+  .mid-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+
+  }
+
+  .right-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+
+  }
+
+  #nav-heading {
+    font-size: 2.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .form-check-label {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .country-heading {
+    color: teal;
+    font-size: 1.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .selection {
+
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .amount {
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .currency {
+    font-size: 0.8rem;
+    color: teal;
+  }
+
+  .country {
+    font-size: 0.9rem;
+    color: teal;
+  }
+
+  .flag-image {
+    width: 3.8rem;
+  }
+
+
+  .exchange {
+    font-size: 3.1rem;
+    color: teal;
+  }
 }
 
-.flag-image {
-  width: 7rem;
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .mynavbar {
+    /* width: 100%; */
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2.2rem;
+  }
+
+  .bigBox {
+    height: calc(100vh - 25vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .left-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+  }
+
+  .mid-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+
+  }
+
+  .right-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+
+  }
+
+  #nav-heading {
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .form-check-label {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .country-heading {
+    color: teal;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .selection {
+
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .amount {
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .currency {
+    font-size: 1rem;
+    color: teal;
+  }
+
+  .country {
+    font-size: 1.1rem;
+    color: teal;
+  }
+
+  .flag-image {
+    width: 4rem;
+  }
+
+
+  .exchange {
+    font-size: 3.5rem;
+    color: teal;
+  }
 }
 
-.selection {
+/* XXL devices (very large screens, 1400px and up) */
+@media (min-width: 1400px) {
 
-  padding: 0.2rem;
-  font-size: 1.4rem;
-  border-radius: 6px;
-  border: 1px solid purple;
-  background: transparent;
-  color: teal;
-}
+  .mynavbar {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2.2rem;
+  }
 
-.amount {
-  padding: 0.2rem;
-  font-size: 1.1rem;
-  border-radius: 5px;
-  border: 1px solid purple;
-  background: transparent;
-  color: teal;
-}
+  .bigBox {
+    height: calc(100vh - 25vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
 
-.currency {
-  font-size: 1.1rem;
-  color: teal;
-}
+  .left-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+  }
 
-.country {
-  font-size: 1.2rem;
-  color: teal;
-}
+  .mid-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
 
-.country-heading {
-  color: teal;
-  font-size: 2.9rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+  }
 
-#nav-heading {
-  font-size: 3.2rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  .right-div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    gap: 1rem;
+
+  }
+
+  #nav-heading {
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .form-check-label {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .country-heading {
+    color: teal;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .selection {
+
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .amount {
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 1px solid purple;
+    background: transparent;
+    color: teal;
+  }
+
+  .currency {
+    font-size: 1rem;
+    color: teal;
+  }
+
+  .country {
+    font-size: 1.1rem;
+    color: teal;
+  }
+
+  .flag-image {
+    width: 4rem;
+  }
+
+
+  .exchange {
+    font-size: 3.5rem;
+    color: teal;
+  }
+
 }
 
 .dark-mode-common-color {
@@ -139,597 +683,4 @@ body {
 
 .light-mode-common-border {
   border: 1px solid teal;
-}
-
-/* Extra small devices (phones, less than 576px) */
-@media (max-width: 575.98px) {
-
-  .bigBox {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-
-  #nav-heading {
-    font-size: 2.3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .country-heading {
-    color: teal;
-    font-size: 1.9rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .selection {
-
-    padding: 0.2rem;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .amount {
-    padding: 0.2rem;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .currency {
-    font-size: 1rem;
-    color: teal;
-  }
-
-  .country {
-    font-size: 1.1rem;
-    color: teal;
-  }
-
-  .flag-image {
-    width: 4rem;
-  }
-
-  .left-div {
-    height: 40%;
-    gap: 0.5rem;
-  }
-
-  .mid-div {
-    height: 15%;
-    margin: 4rem;
-  }
-
-  .exchange {
-    font-size: 2.4rem;
-    color: teal;
-  }
-
-  .right-div {
-    height: 40%;
-    margin-bottom: 5rem;
-  }
-
-  .dark-mode-common-color {
-    color: whitesmoke;
-  }
-
-  .light-mode-common-color {
-    color: teal;
-  }
-
-  .dark-mode-common-border {
-    border: 1px solid whitesmoke;
-  }
-
-  .light-mode-common-border {
-    border: 1px solid teal;
-  }
-
-
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .bigBox {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-
-  #nav-heading {
-    font-size: 2.3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .country-heading {
-    color: teal;
-    font-size: 1.9rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .selection {
-
-    padding: 0.2rem;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .amount {
-    padding: 0.2rem;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .currency {
-    font-size: 1rem;
-    color: teal;
-  }
-
-  .country {
-    font-size: 1.1rem;
-    color: teal;
-  }
-
-  .flag-image {
-    width: 4rem;
-  }
-
-  .left-div {
-    height: 40%;
-    gap: 0.5rem;
-  }
-
-  .mid-div {
-    height: 15%;
-    margin: 4rem;
-  }
-
-  .exchange {
-    font-size: 2.4rem;
-    color: teal;
-  }
-
-  .right-div {
-    height: 40%;
-    margin-bottom: 5rem;
-  }
-
-  .dark-mode-common-color {
-    color: whitesmoke;
-  }
-
-  .light-mode-common-color {
-    color: teal;
-  }
-
-  .dark-mode-common-border {
-    border: 1px solid whitesmoke;
-  }
-
-  .light-mode-common-border {
-    border: 1px solid teal;
-  }
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-  .bigBox {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-  }
-
-  #nav-heading {
-    font-size: 2.3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .country-heading {
-    color: teal;
-    font-size: 2.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .selection {
-
-    padding: 0.2rem;
-    font-size: 1.2rem;
-    border-radius: 6px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .amount {
-    padding: 0.2rem;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .currency {
-    font-size: 1.5rem;
-    color: teal;
-  }
-
-  .country {
-    font-size: 1.6rem;
-    color: teal;
-  }
-
-  .flag-image {
-    width: 6rem;
-  }
-
-  .left-div {
-    height: 40%;
-    gap: 0.5rem;
-  }
-
-  .mid-div {
-    height: 15%;
-    margin: 4rem;
-  }
-
-  .exchange {
-    font-size: 2.6rem;
-    color: teal;
-  }
-
-  .right-div {
-    height: 40%;
-    margin-bottom: 5rem;
-  }
-
-  .dark-mode-common-color {
-    color: whitesmoke;
-  }
-
-  .light-mode-common-color {
-    color: teal;
-  }
-
-  .dark-mode-common-border {
-    border: 1px solid whitesmoke;
-  }
-
-  .light-mode-common-border {
-    border: 1px solid teal;
-  }
-
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .bigBox {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-  }
-
-  #nav-heading {
-    font-size: 2.9rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .form-check {
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .country-heading {
-    color: teal;
-    font-size: 2.9rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .selection {
-
-    padding: 0.2rem;
-    font-size: 1.2rem;
-    border-radius: 6px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .amount {
-    padding: 0.2rem;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .currency {
-    font-size: 1.5rem;
-    color: teal;
-  }
-
-  .country {
-    font-size: 1.6rem;
-    color: teal;
-  }
-
-  .flag-image {
-    width: 6rem;
-  }
-
-  .left-div {
-    height: 40%;
-    gap: 0.5rem;
-  }
-
-  .mid-div {
-    height: 15%;
-    margin: 4rem;
-  }
-
-  .exchange {
-    font-size: 2.9rem;
-    color: teal;
-  }
-
-  .right-div {
-    height: 40%;
-    margin-bottom: 5rem;
-  }
-
-  .dark-mode-common-color {
-    font-size: 1.5rem;
-    color: whitesmoke;
-  }
-
-  .light-mode-common-color {
-    color: teal;
-  }
-
-  .dark-mode-common-border {
-    border: 1px solid whitesmoke;
-  }
-
-  .light-mode-common-border {
-    border: 1px solid teal;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  .bigBox {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-
-  .left-div {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 1rem;
-  }
-
-  .mid-div {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  .right-div {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 1rem;
-
-  }
-
-  .exchange {
-    font-size: 4rem;
-    color: teal;
-  }
-
-  .flag-image {
-    width: 7rem;
-  }
-
-  .selection {
-
-    padding: 0.2rem;
-    font-size: 1.4rem;
-    border-radius: 6px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .amount {
-    padding: 0.2rem;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .currency {
-    font-size: 1.1rem;
-    color: teal;
-  }
-
-  .country {
-    font-size: 1.2rem;
-    color: teal;
-  }
-
-  .country-heading {
-    color: teal;
-    font-size: 2.9rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  #nav-heading {
-    font-size: 3.2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .dark-mode-common-color {
-    color: whitesmoke;
-  }
-
-  .light-mode-common-color {
-    color: teal;
-  }
-
-  .dark-mode-common-border {
-    border: 1px solid whitesmoke;
-  }
-
-  .light-mode-common-border {
-    border: 1px solid teal;
-  }
-}
-
-/* XXL devices (very large screens, 1400px and up) */
-@media (min-width: 1400px) {
-  .bigBox {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-
-  #nav-heading {
-    font-size: 2.3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .country-heading {
-    color: teal;
-    font-size: 1.9rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .selection {
-
-    padding: 0.2rem;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .amount {
-    padding: 0.2rem;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    border: 1px solid purple;
-    background: transparent;
-    color: teal;
-  }
-
-  .currency {
-    font-size: 1rem;
-    color: teal;
-  }
-
-  .country {
-    font-size: 1.1rem;
-    color: teal;
-  }
-
-  .flag-image {
-    width: 4rem;
-  }
-
-  .left-div {
-    height: 40%;
-    gap: 0.5rem;
-  }
-
-  .mid-div {
-    height: 15%;
-    margin: 4rem;
-  }
-
-  .exchange {
-    font-size: 2.4rem;
-    color: teal;
-  }
-
-  .right-div {
-    height: 40%;
-    margin-bottom: 5rem;
-  }
-
-  .dark-mode-common-color {
-    color: whitesmoke;
-  }
-
-  .light-mode-common-color {
-    color: teal;
-  }
-
-  .dark-mode-common-border {
-    border: 1px solid whitesmoke;
-  }
-
-  .light-mode-common-border {
-    border: 1px solid teal;
-  }
 }
