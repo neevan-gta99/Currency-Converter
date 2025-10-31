@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightLeft } from '@fortawesome/free-solid-svg-icons';
 import { currencyList } from "./currencyList";
 import { countryList } from "./countryList";
+import { currencyNameList } from "./currencyNamesList";
 
 export default function CurrencyConverter() {
 
@@ -48,13 +49,26 @@ export default function CurrencyConverter() {
     const [countryCode, setCountryCode] = useState(countryList["United States"]);
     const [currencyCode, setCurrencyCode] = useState(currencyList["US"]);
     const [name, setName] = useState("United States");
-
+    const [currencyName, setCurrencyName] = useState("United States Dollar"); 
+    
     const [countryCode2, setCountryCode2] = useState(countryList["India"]);
     const [currencyCode2, setCurrencyCode2] = useState(currencyList["IN"]);
     const [name2, setName2] = useState("India");
+    const [currencyName2, setCurrencyName2] = useState("Indian Rupee"); 
 
     const [rate, setRate] = useState(1);
     const [rate2, setRate2] = useState(85.7264);
+
+    useEffect(()=>{
+        const currency_Name = currencyNameList[currencyCode as keyof typeof currencyNameList];
+
+        setCurrencyName(currency_Name);
+
+        const currency_Name2 = currencyNameList[currencyCode2 as keyof typeof currencyNameList];
+
+        setCurrencyName2(currency_Name2);
+
+    },[currencyCode,currencyCode2])
 
     const handleSelection = (event: React.ChangeEvent<HTMLSelectElement>) => {
 
@@ -189,6 +203,8 @@ export default function CurrencyConverter() {
 
                 </div>
                 <span className="country common" > Country Code : {countryCode}</span>
+                <span className="country common" >{currencyName}</span>
+
 
 
             </div>
@@ -223,6 +239,7 @@ export default function CurrencyConverter() {
                     <span className="currency common" style={{ marginLeft: "7px" }}>{currencyCode2}</span>
                 </div>
                 <span className="country common" > Country Code : {countryCode2}</span>
+                <span className="country common" >{currencyName2}</span>
 
 
             </div>
