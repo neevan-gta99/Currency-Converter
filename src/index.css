@@ -36,19 +36,19 @@ body {
 @media (max-width: 575.98px) {
 
   .mynavbar {
-    height: 30%;
+    height: 20%;
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    padding: 2.2rem;
-    gap: 2rem;
+    padding: 1.1rem;
+    gap: 1rem;
   }
 
   .bigBox {
-    height: calc(100vh - 30vh);
+    height: calc(100vh - 20vh);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
