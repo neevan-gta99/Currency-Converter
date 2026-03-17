@@ -202,7 +202,7 @@ export default function CurrencyConverter() {
                     <span className="currency common" style={{ marginLeft: "7px" }}>{currencyCode}</span>
 
                 </div>
-                <span className="country common" > Country Code : {countryCode}</span>
+                <span className="country common" > Country Code = {countryCode}</span>
                 <span className="country common" >{currencyName}</span>
 
 
